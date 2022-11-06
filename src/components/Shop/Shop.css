@@ -1,1 +1,15 @@
-.
+.shop-container{
+    display: flex;
+}
+.shop-container li{
+    text-decoration: none;
+}
+.product-container{
+    width: 70%;
+    margin-left: 20px;
+    margin: 5px;
+    border-right: solid 1px lightgray;
+}
+.cart-container h3{
+    text-align: center;
+}

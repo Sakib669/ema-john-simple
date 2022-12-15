@@ -6,7 +6,8 @@ const Card = (props) => {
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const productElement = cart[i];
-        total = total + productElement.price;
+        total = total + productElement.price * productElement.quantity;
+        // debugger;
         
     }
 

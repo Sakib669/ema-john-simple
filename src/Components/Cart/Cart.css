@@ -1,4 +1,5 @@
 .cart {
+    background: rgba(255, 153, 0, 0.01);
     position: sticky;
     top: 0;
 }

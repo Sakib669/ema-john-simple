@@ -13,6 +13,7 @@
 .cart-container {
     background: rgba(255, 153, 0, 0.3);
     padding: 28px 16px;
+    position: sticky;
 }
 
 .summary-title {

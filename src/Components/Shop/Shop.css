@@ -22,3 +22,13 @@
     font-size: 25px;
     line-height: 30px;
 }
+
+.btn-proceed{
+    background: #FF9900;
+    color: #fff;
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

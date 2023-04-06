@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { getShoppingCart, addToDb } from '../../utilities/fakedb';
+import { getShoppingCart, addToDb, deleteShoppingCart, clearShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCreditCard, faCreditCardAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Shop = () => {
 
@@ -59,6 +62,11 @@ const Shop = () => {
 
     // console.log(cart);
 
+    const handleClearCart = () => {
+        setCart([]);
+        deleteShoppingCart();
+    };
+
     return (
         <div className='shop-container
         '>
@@ -72,7 +80,16 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}
+                handleClearCart={handleClearCart}
+                >
+                    <Link to='/order'>
+                        <button className='btn-proceed'>
+                            Review Order
+                            <FontAwesomeIcon icon={faCreditCardAlt}></FontAwesomeIcon>
+                        </button>
+                    </Link>
+                </Cart>
             </div>
         </div>
     );

@@ -18,3 +18,13 @@
     letter-spacing: 0.0015em;
     color: #0E161A;
 }
+
+.btn-clear-cart{
+    background: #FF3030;
+    color: #fff;
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

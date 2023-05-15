@@ -1,5 +1,6 @@
 nav {
     width: 100%;
+    align-items: center;
 }
 .header{
     height:  80px;
@@ -12,13 +13,14 @@ nav {
 
 ul{
     display: flex;
+    align-items: center;
 }
 
 ul li{
     list-style: none;
 }
 
-ul li a{
+ul li a, span{
     text-decoration: none;
     color: #fff;
     margin: 0 20px 0 0;

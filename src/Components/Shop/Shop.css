@@ -32,3 +32,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.pagination-buttons{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pagination-buttons .selected{
+    background: #FF9900;
+}
